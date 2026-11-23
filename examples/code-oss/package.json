@@ -1,0 +1,19 @@
+{
+  "name": "wsl-connector-example",
+  "publisher": "june74",
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.143.1"
+  },
+  "main": "./extension.cjs",
+  "extensionKind": [
+    "ui"
+  ],
+  "enabledApiProposals": [
+    "resolvers"
+  ],
+  "activationEvents": [
+    "onResolveRemoteAuthority:wsl-connector"
+  ]
+}

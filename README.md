@@ -17,9 +17,11 @@ Use `--timeout-ms N` to limit command runtime. Ctrl+C requests cancellation. Sta
 ## Test
 
 ```powershell
-node --test
+node --test --test-concurrency=1
 ```
 
 Tests target Ubuntu by default. Set `WSL_CONNECTOR_DISTRO` to select another installed distribution. On Linux, only the boundary fixture tests run.
 
 See the [connector contract](CONTRACT.md) and [MIT license](LICENSE).
+
+For an IDE that uses the Code-OSS remote protocol, see the [minimal Code-OSS resolver example](examples/code-oss/README.md).
